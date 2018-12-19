@@ -9,8 +9,8 @@ then
     GENERATOR=(-G "$*")
 fi
 
-ROOTDIR="$(dirname "$(readlink -fn "$0")")"
-    
+ROOTDIR="$(dirname "$(greadlink -fn "$0")")"
+echo $ROOTDIR
 rm -rf build
 mkdir build
 cd build
